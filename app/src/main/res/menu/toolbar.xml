@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="扫描"
+        android:id="@+id/scan_item"
+        android:icon="@drawable/add"
+        app:showAsAction="always"/>
+
+
+    <item android:title="健康分析"
+        android:id="@+id/analysis_item"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,480 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_blue_panel_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/imageView65"
+                android:layout_width="319dp"
+                android:layout_height="126dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/valet"
+                android:visibility="visible"
+                tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/login_blue_panel_bg"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="10dp">
+
+                        <EditText
+                            android:id="@+id/userNameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/login_page_panels_bg"
+                            android:gravity="center_vertical"
+                            android:hint="Your name"
+                            android:inputType="textPersonName"
+                            android:paddingStart="50dp"
+                            android:paddingLeft="5dp"
+                            android:paddingEnd="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/editText2"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/userNameEditText"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:background="#00e84c3d"
+                            android:padding="3dp"
+                            android:src="@drawable/user64" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <EditText
+                            android:id="@+id/dateOfBirthEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignTop="@+id/imageView1"
+                            android:layout_alignBottom="@+id/imageView1"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/login_page_panels_bg"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="Birth Date"
+                            android:paddingStart="50dp"
+                            android:paddingLeft="40dp"
+                            android:paddingEnd="5dp"
+                            android:paddingRight="5dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:src="@drawable/calendar_48" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <Spinner
+                            android:id="@+id/genderSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/login_page_panels_bg"
+                            android:hint="Password"
+                            android:inputType="textWebPassword|textPassword"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/genderSpinner"
+                            android:layout_alignBottom="@+id/genderSpinner"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/spinner_down_50" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/genderSpinner"
+                            android:layout_alignBottom="@+id/genderSpinner"
+                            android:padding="5dp"
+                            android:src="@drawable/gender_50" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp"></RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView251"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:text="补充您的详细信息"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView251"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/login_blue_panel_bg">
+
+                <EditText
+                    android:id="@+id/birthWeightSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/login_page_panels_bg"
+                    android:hint="请输入您的体重（kg）"
+                    android:inputType="textPersonName"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="50dp"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/birthHeightSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/birthHeadSpinner"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/login_page_panels_bg"
+                    android:hint="请输入您的身高（cm）"
+                    android:inputType="textPersonName"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="50dp"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/birthHeadSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/birthWeightSpinner"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/login_page_panels_bg"
+                    android:hint="请输入您的腰臀比"
+                    android:inputType="textPersonName"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="50dp"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/bloodGroupSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/birthHeightSpinner"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/login_page_panels_bg" />
+
+
+                <EditText
+                    android:id="@+id/doctorNameEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/bloodGroupSpinner"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/login_page_panels_bg"
+                    android:hint="家庭医生姓名"
+                    android:inputType="textPersonName"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="50dp"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/doctorContactEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/doctorNameEditText"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/login_page_panels_bg"
+                    android:hint="联系方式"
+                    android:inputType="phone"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="50dp"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/enterBirthDataBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/doctorContactEditText"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="点击开始"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView43"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/bloodGroupSpinner"
+                    android:layout_alignEnd="@+id/bloodGroupSpinner"
+                    android:layout_alignRight="@+id/bloodGroupSpinner"
+                    android:layout_alignBottom="@+id/bloodGroupSpinner"
+                    android:src="@drawable/spinner_down_50" />
+
+                <ImageView
+                    android:id="@+id/imageView44"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/enterBirthDataBtn"
+                    android:layout_alignStart="@+id/doctorContactEditText"
+                    android:layout_alignLeft="@+id/doctorContactEditText"
+                    android:layout_alignTop="@+id/doctorContactEditText"
+                    android:padding="3dp"
+                    android:src="@drawable/phone_50" />
+
+                <ImageView
+                    android:id="@+id/imageView45"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/doctorContactEditText"
+                    android:layout_alignStart="@+id/doctorNameEditText"
+                    android:layout_alignLeft="@+id/doctorNameEditText"
+                    android:layout_alignTop="@+id/doctorNameEditText"
+                    android:padding="3dp"
+                    android:src="@drawable/doctor_50" />
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/birthHeadSpinner"
+                    android:layout_alignStart="@+id/birthWeightSpinner"
+                    android:layout_alignLeft="@+id/birthWeightSpinner"
+                    android:layout_alignTop="@+id/birthWeightSpinner"
+                    android:padding="3dp"
+                    android:src="@drawable/weight_50" />
+
+                <ImageView
+                    android:id="@+id/imageView47"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/birthHeightSpinner"
+                    android:layout_alignStart="@+id/birthHeadSpinner"
+                    android:layout_alignLeft="@+id/birthHeadSpinner"
+                    android:layout_alignTop="@+id/birthHeadSpinner"
+                    android:padding="3dp"
+                    android:src="@drawable/pacifier_64" />
+
+                <ImageView
+                    android:id="@+id/imageView48"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/bloodGroupSpinner"
+                    android:layout_alignStart="@+id/birthHeightSpinner"
+                    android:layout_alignLeft="@+id/birthHeightSpinner"
+                    android:layout_alignTop="@+id/birthHeightSpinner"
+                    android:padding="6dp"
+                    android:src="@drawable/height_scale_48" />
+
+                <ImageView
+                    android:id="@+id/imageView49"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/doctorNameEditText"
+                    android:layout_alignStart="@+id/bloodGroupSpinner"
+                    android:layout_alignLeft="@+id/bloodGroupSpinner"
+                    android:layout_alignTop="@+id/bloodGroupSpinner"
+                    android:padding="3dp"
+                    android:src="@drawable/drop_50" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+
